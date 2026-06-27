@@ -27,7 +27,7 @@
 
 		<image name="BottomBar" extra="true">
 			<tile>false</tile>
-			<size>1 0.03</size>
+			<size>1 0.065</size>
 			<pos>0 1</pos>
 			<origin>0 1</origin>
 			<path>./art/bottom.png</path>
@@ -216,13 +216,13 @@
 			<color>D32F2F</color>
 		</image>
 
-	    <image name="top" extra="true">
-            <pos>0 0</pos>
-            <origin>0 0</origin>
-            <size>1 0.08</size>
-            <path>./art/top.png</path>
-            <color>FFFFFF</color>
-        </image>
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.09</size>
+			<path>./art/top.png</path>
+			<color>D32F2F</color>
+		</image>
 
 	</view>
 
