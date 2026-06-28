@@ -10,29 +10,28 @@
 			<origin>0 0</origin>
                         <path>./art/background.png</path>
 		</image>
-
-        <image name="TopHeader" extra="true">
-            <tile>false</tile>
-            <pos>0 0</pos>
-            <origin>0 0</origin>
-            <size>1 0.13</size>
-            <path>./art/top.png</path>
-            <color>111111</color>
-        </image>
-
-		<text name="cyberTitle" extra="true">
-			<pos>0.5 0.018</pos>
+		
+		<image name="CyberHeader" extra="true">
+			<pos>0 0</pos><origin>0 0</origin><size>1 0.15</size>
+			<path>./art/header.png</path>
+		</image>
+		<image name="CyberFooter" extra="true">
+			<pos>0 1</pos><origin>0 1</origin><size>1 0.07</size>
+			<path>./art/footer.png</path>
+		</image>
+<text name="cyberTitle" extra="true">
+			<pos>0.5 0.035</pos>
 			<origin>0.5 0</origin>
 			<size>0.9 0.05</size>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.048</fontSize>
+			<fontSize>0.050</fontSize>
 			<color>FFFFFF</color>
 			<alignment>center</alignment>
 			<value>CLON3D CYBERDECK</value>
 		</text>
 
 		<text name="cyberSub" extra="true">
-			<pos>0.5 0.070</pos>
+			<pos>0.5 0.095</pos>
 			<origin>0.5 0</origin>
 			<size>0.9 0.03</size>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
@@ -50,8 +49,8 @@
 
 		<image name="CenterFade" extra="true">
 			<tile>false</tile>
-			<size>1 0.38</size>
-			<pos>0.5 0.33</pos>
+			<size>1 0.5</size>
+			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<path>./art/centerfade.png</path>
 			<color>33D9FF</color>
