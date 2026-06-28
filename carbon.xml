@@ -222,7 +222,7 @@
 			<color>D32F2F</color>
 		</image>
 
-	    <image name="top" extra="true"><textlist name="gamelist">
+	    <image name="top" extra="true">
             <pos>0 0</pos>
             <origin>0 0</origin>
             <size>1 0.08</size>
