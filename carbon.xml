@@ -10,6 +10,28 @@
 			<origin>0 0</origin>
                         <path>./art/background.png</path>
 		</image>
+		<text name="cyberTitle" extra="true">
+			<pos>0.5 0.028</pos>
+			<origin>0.5 0</origin>
+			<size>0.9 0.05</size>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.038</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<value>CLON3D CYBERDECK</value>
+		</text>
+
+		<text name="cyberSub" extra="true">
+			<pos>0.5 0.075</pos>
+			<origin>0.5 0</origin>
+			<size>0.9 0.03</size>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.018</fontSize>
+			<color>66FFFF</color>
+			<alignment>center</alignment>
+			<value>RETRO GAMING SYSTEM</value>
+		</text>
+
 
 		<helpsystem name="help">
 			<textColor>7d7d7d</textColor>
@@ -22,7 +44,7 @@
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<path>./art/centerfade.png</path>
-			<color>D32F2F</color>
+			<color>33D9FF</color>
 		</image>
 
 		<image name="BottomBar" extra="true">
@@ -31,11 +53,11 @@
 			<pos>0 1</pos>
 			<origin>0 1</origin>
 			<path>./art/bottom.png</path>
-			<color>D32F2F</color>
+			<color>33D9FF</color>
 		</image>
 
 		<image name="ControllerOverlay" extra="true">
-			<color>D32F2F</color>
+			<color>33D9FF</color>
 		</image>
 
 	</view>
@@ -219,7 +241,7 @@
 			<origin>0 1</origin>
 			<size>1 0.035</size>
 			<path>./art/bottom.png</path>
-			<color>D32F2F</color>
+			<color>33D9FF</color>
 		</image>
 
 	    <image name="top" extra="true">
