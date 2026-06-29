@@ -1,0 +1,77 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<!-- CLON3D CYBERDECK OS - SYSTEM DASHBOARD VIEW -->
+	<!-- Complete replacement for Carbon system view -->
+	<!-- Fullscreen industrial dashboard interface -->
+
+	<view name="system">
+
+		<!-- FULL-SCREEN BACKGROUND: Industrial gunmetal dashboard -->
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/clon3d_dashboard_background.svg</path>
+		</image>
+
+		<!-- TOP STATUS BAR: System identification and status -->
+		<image name="header_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.11</size>
+			<pos>0.5 0</pos>
+			<origin>0.5 0</origin>
+			<path>./art/clon3d_fullscreen_header.svg</path>
+		</image>
+
+		<!-- CENTER LOGO FRAME: Industrial framing (main focal point) -->
+		<image name="logo_frame" extra="true">
+			<tile>false</tile>
+			<size>0.625 0.83</size>
+			<pos>0.5 0.54</pos>
+			<origin>0.5 0.5</origin>
+			<path>./art/clon3d_fullscreen_logo_frame.svg</path>
+		</image>
+
+		<!-- SYSTEM LOGO: Large centered (THE focal point of the interface) -->
+		<image name="logo">
+			<path>./art/logo/${system.theme}.svg</path>
+			<pos>0.5 0.54</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.55 0.75</maxSize>
+			<color>00d9ffff</color>
+		</image>
+
+		<!-- SYSTEM NAME: Minimal text overlay -->
+		<text name="system_name" extra="true">
+			<pos>0.5 0.15</pos>
+			<origin>0.5 0</origin>
+			<size>0.4 0.08</size>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.040</fontSize>
+			<color>00d9ffff</color>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+		<!-- BOTTOM FOOTER: Controls and information -->
+		<image name="footer_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.12</size>
+			<pos>0.5 1</pos>
+			<origin>0.5 1</origin>
+			<path>./art/clon3d_fullscreen_footer.svg</path>
+		</image>
+
+		<!-- HELP SYSTEM: Minimal tactical display -->
+		<helpsystem name="help">
+			<textColor>00d9ffff</textColor>
+			<iconColor>00d9ffff</iconColor>
+			<pos>0.02 0.88</pos>
+			<fontSize>0.020</fontSize>
+		</helpsystem>
+
+	</view>
+
+</theme>
