@@ -1,0 +1,73 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<!-- CLON3D CYBERDECK OS - VIDEO VIEW -->
+	<!-- Game video playback interface -->
+	<!-- Custom independent module -->
+
+	<view name="video">
+
+		<!-- Background -->
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/clon3d_dashboard_background.svg</path>
+		</image>
+
+		<!-- Header -->
+		<image name="header_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.10</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/video_header.svg</path>
+		</image>
+
+		<!-- Left side: Game list -->
+		<textlist name="gamelist">
+			<selectorColor>00d9ff</selectorColor>
+			<selectedColor>00d9ffff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.02 0.15</pos>
+			<size>0.40 0.70</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.028</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+
+		<!-- Right side: Video player -->
+		<video name="md_video">
+			<pos>0.75 0.50</pos>
+			<maxSize>0.40 0.55</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.2</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+
+		<!-- Bottom footer -->
+		<image name="footer_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.10</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./art/video_footer.svg</path>
+		</image>
+
+		<!-- Help system -->
+		<helpsystem name="help">
+			<textColor>00d9ffff</textColor>
+			<iconColor>00d9ffff</iconColor>
+			<pos>0.02 0.88</pos>
+			<fontSize>0.020</fontSize>
+		</helpsystem>
+
+	</view>
+
+</theme>
