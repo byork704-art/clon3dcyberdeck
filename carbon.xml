@@ -1,14 +1,30 @@
+<!--
+Theme: Carbon + Clon3D Cyberdeck
+version: 2.0 + Cyberdeck Edition
+author: Eric Hettervik (Rookervik) + Clon3D Update
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+
+Clon3D Cyberdeck System View - Premium Edition
+Colors:
+	Dark Gunmetal: 2a 2a 2e
+	Cyan Accent:   00 d9 ff
+	Secondary:     1a 1a 1e
+	Text Light:    e0 e0 e0
+-->
 <theme>
     <formatVersion>3</formatVersion>
 
 	<view name="system">
 
+		<!-- Dark Gunmetal Background -->
 		<image name="background" extra="true">
-			<tile>true</tile>
+			<tile>false</tile>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
-                        <path>./art/background.png</path>
+			<path>./art/cyberdeck_background.svg</path>
+			<color>2a2a2e</color>
 		</image>
 		
 		<image name="CyberHeader" extra="true">
@@ -42,32 +58,79 @@
 		</text>
 
 
-		<helpsystem name="help">
-			<textColor>7d7d7d</textColor>
-			<iconColor>7d7d7d</iconColor>
-		</helpsystem>
-
-		<image name="CenterFade" extra="true">
+		<!-- Clon3D Header Banner -->
+		<image name="header" extra="true">
 			<tile>false</tile>
-			<size>1 0.5</size>
+			<size>1 0.12</size>
+			<pos>0.5 0</pos>
+			<origin>0.5 0</origin>
+			<path>./art/cyberdeck_header.svg</path>
+			<color>00d9ff</color>
+		</image>
+
+		<!-- Center Fade Effect -->
+		<image name="centerFade" extra="true">
+			<tile>false</tile>
+			<size>1 0.6</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
-			<path>./art/centerfade.png</path>
-			<color>33D9FF</color>
+			<path>./art/centerfade_cyberdeck.svg</path>
+			<color>00d9ff15</color>
 		</image>
 
-		<image name="BottomBar" extra="true">
+		<!-- Bottom Minimalist Footer -->
+		<image name="footer" extra="true">
 			<tile>false</tile>
-			<size>1 0.03</size>
+			<size>1 0.08</size>
+			<pos>0.5 1</pos>
+			<origin>0.5 1</origin>
+			<path>./art/cyberdeck_footer.svg</path>
+			<color>00d9ff</color>
+		</image>
+
+		<!-- Decorative Corner Elements -->
+		<image name="corner_tl" extra="true">
+			<tile>false</tile>
+			<size>0.08 0.08</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/corner.svg</path>
+			<color>00d9ff</color>
+		</image>
+
+		<image name="corner_tr" extra="true">
+			<tile>false</tile>
+			<size>0.08 0.08</size>
+			<pos>1 0</pos>
+			<origin>1 0</origin>
+			<path>./art/corner.svg</path>
+			<color>00d9ff</color>
+		</image>
+
+		<image name="corner_bl" extra="true">
+			<tile>false</tile>
+			<size>0.08 0.08</size>
 			<pos>0 1</pos>
 			<origin>0 1</origin>
-			<path>./art/bottom.png</path>
-			<color>33D9FF</color>
+			<path>./art/corner.svg</path>
+			<color>00d9ff</color>
 		</image>
 
-		<image name="ControllerOverlay" extra="true">
-			<color>33D9FF</color>
+		<image name="corner_br" extra="true">
+			<tile>false</tile>
+			<size>0.08 0.08</size>
+			<pos>1 1</pos>
+			<origin>1 1</origin>
+			<path>./art/corner.svg</path>
+			<color>00d9ff</color>
 		</image>
+
+		<!-- Help System -->
+		<helpsystem name="help">
+			<textColor>00d9ff</textColor>
+			<iconColor>00d9ff</iconColor>
+			<pos>0.02 0.95</pos>
+		</helpsystem>
 
 	</view>
 
@@ -78,14 +141,14 @@
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
-                        <path>./art/background.png</path>
+			<path>./art/carbon_fiber.png</path>
 		</image>
 
 		<textlist name="gamelist">
 			<selectorColor>1c1c1c</selectorColor>
-			<selectedColor>D32F2F</selectedColor>
-			<primaryColor>969696</primaryColor>
-			<secondaryColor>7a6161</secondaryColor>
+			<selectedColor>00d9ff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.030</fontSize>
 			<pos>0.025 0.18</pos>
@@ -101,8 +164,8 @@
 	<view name="detailed">
 
 		<image name="md_image">
-			<pos>0.680 0.390</pos>
-			<maxSize>0.620 0.620</maxSize>
+			<pos>0.763 0.400</pos>
+			<maxSize>0.453 0.436</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
 
@@ -117,7 +180,7 @@
 				<maxSize>0.366 0.436</maxSize>
 				<origin>0.5 0.5</origin>			
 				<delay>0.2</delay>
-				<default />
+				<default></default>
 				<showSnapshotNoVideo>true</showSnapshotNoVideo>
 				<showSnapshotDelay>false</showSnapshotDelay>
 			</video>
@@ -139,11 +202,11 @@
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
-			<path>./art/background.png</path>
+			<path>./art/carbon_fiber.png</path>
 		</image>
 
-		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
-			<color>969696</color>
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players,[...]
+			<color>e0e0e0</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.023</fontSize>
@@ -154,7 +217,7 @@
 		</text>
 
 		<datetime name="md_lastplayed, md_releasedate">
-			<color>969696</color>
+			<color>e0e0e0</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.023</fontSize>
@@ -190,7 +253,7 @@
 		</text>
 
 		<text name="md_description">
-			<color>969696</color>
+			<color>e0e0e0</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.023</fontSize>
@@ -199,69 +262,62 @@
 		</text>
 
 		<textlist name="gamelist">
-             <selectorColor>2B2B2B</selectorColor>
-             <selectedColor>FFFFFF</selectedColor>
-            <primaryColor>D8D8D8</primaryColor>
-            <secondaryColor>7F858C</secondaryColor>
-
-            <fontPath>./art/Cabin-Bold.ttf</fontPath>
-            <forceUppercase>0</forceUppercase>
-
-            <!-- Left navigation panel -->
-            <pos>0.04 0.13</pos>
-            <size>0.22 0.78</size>
-
-            <alignment>left</alignment>
-            <horizontalMargin>0.02</horizontalMargin>
-
-            <fontSize>0.031</fontSize>
-
-            <scrollSound>./art/scroll.wav</scrollSound>
-        </textlist>
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>00d9ff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.021 0.168</pos>
+			<size>0.489 0.754</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.03</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
 
 		<image name="md_hidden">
 			<pos>0.823 0.700</pos>
 			<path>./art/hidden.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>969696</color>
+			<color>e0e0e0</color>
 		</image>
 		<image name="md_kidgame">
 			<pos>0.883 0.700</pos>
 			<path>./art/kid.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>969696</color>
+			<color>e0e0e0</color>
 		</image>
 		<image name="md_favorite">
 			<pos>0.940 0.700</pos>
 			<path>./art/favorite.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>969696</color>
+			<color>00d9ff</color>
 		</image>
 
-		</view>
+	</view>
 
 	<view name="basic, detailed, video">
 
 		<image name="bottom" extra="true">
 			<pos>0 1</pos>
 			<origin>0 1</origin>
-			<size>1 0.035</size>
+			<size>1 0.065</size>
 			<path>./art/bottom.png</path>
-			<color>33D9FF</color>
+			<color>00d9ff</color>
 		</image>
 
-	    <image name="top" extra="true">
-            <pos>0 0</pos>
-            <origin>0 0</origin>
-            <size>1 0.08</size>
-            <path>./art/top.png</path>
-            <color>FFFFFF</color>
-        </image>
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.16</size>
+			<path>./art/top.png</path>
+			<color>00d9ff</color>
+		</image>
 
 	</view>
-
 
 </theme>
