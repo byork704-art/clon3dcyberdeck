@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 130">
+  <!-- Game list view header -->
+  
+  <!-- Dark background -->
+  <rect width="1920" height="130" fill="#000000" opacity="0.7"/>
+  
+  <!-- Top accent line -->
+  <rect width="1920" height="3" fill="#00d9ff" opacity="0.9"/>
+  
+  <!-- Left: System name -->
+  <text x="40" y="65" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00d9ff">GAME LIBRARY</text>
+  <text x="40" y="95" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" opacity="0.6">SELECT TO LAUNCH</text>
+  
+  <!-- Right: Stats -->
+  <text x="1880" y="55" font-family="'Courier New', monospace" font-size="16" fill="#00d9ff" text-anchor="end" font-weight="bold">GAMES: 0000</text>
+  <text x="1880" y="85" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" opacity="0.6" text-anchor="end">FAVORITES: 00</text>
+  
+  <!-- Bottom accent line -->
+  <rect y="127" width="1920" height="3" fill="#00d9ff" opacity="0.7"/>
+</svg>

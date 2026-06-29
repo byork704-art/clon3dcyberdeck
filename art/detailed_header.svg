@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 110">
+  <!-- Detailed view header -->
+  
+  <!-- Dark background -->
+  <rect width="1920" height="110" fill="#000000" opacity="0.7"/>
+  
+  <!-- Top accent line -->
+  <rect width="1920" height="3" fill="#00d9ff" opacity="0.9"/>
+  
+  <!-- Left: View mode -->
+  <text x="40" y="55" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#00d9ff">GAME DETAILS</text>
+  
+  <!-- Right: Info -->
+  <text x="1880" y="55" font-family="'Courier New', monospace" font-size="14" fill="#00d9ff" text-anchor="end" font-weight="bold">DETAILED VIEW</text>
+  
+  <!-- Bottom accent line -->
+  <rect y="107" width="1920" height="3" fill="#00d9ff" opacity="0.7"/>
+</svg>
