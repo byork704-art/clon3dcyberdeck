@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 100">
+  <!-- Minimal bottom status ribbon -->
+  
+  <!-- Dark overlay base -->
+  <rect width="1920" height="100" fill="#000000" opacity="0.7"/>
+  
+  <!-- Top accent line -->
+  <rect width="1920" height="2" fill="#00d9ff" opacity="0.6"/>
+  
+  <!-- Left side: Control legend -->
+  <g>
+    <text x="30" y="35" font-family="'OCR-A', monospace" font-size="11" fill="#00d9ff" font-weight="bold">CONTROLS:</text>
+    <text x="30" y="60" font-family="'OCR-A', monospace" font-size="10" fill="#ffffff" opacity="0.7">◀▶ SELECT | Ⓐ LAUNCH | ☰ MENU</text>
+  </g>
+  
+  <!-- Right side: Info text -->
+  <text x="1890" y="55" font-family="'OCR-A', monospace" font-size="9" fill="#00d9ff" opacity="0.6" text-anchor="end">v2.0 INDUSTRIAL TERMINAL</text>
+  
+  <!-- Bottom accent line -->
+  <rect y="98" width="1920" height="2" fill="#00d9ff" opacity="0.9"/>
+</svg>

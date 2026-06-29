@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 900">
+  <!-- Right-side information ribbon (vertical stack, NOT panels) -->
+  
+  <!-- Vertical ribbon background -->
+  <rect x="10" y="10" width="480" height="880" fill="#000000" opacity="0.4" stroke="#00d9ff" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Info sections (stacked vertically, no boxes) -->
+  
+  <!-- Section 1: System Name -->
+  <g>
+    <text x="30" y="60" font-family="'OCR-A', monospace" font-size="11" fill="#00d9ff" opacity="0.7">SYSTEM</text>
+    <text x="30" y="100" font-family="'OCR-A', monospace" font-size="20" fill="#00d9ff" font-weight="bold">--</text>
+    <line x1="20" y1="120" x2="480" y2="120" stroke="#00d9ff" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- Section 2: Game Library Stats -->
+  <g>
+    <text x="30" y="170" font-family="'OCR-A', monospace" font-size="11" fill="#00d9ff" opacity="0.7">LIBRARY</text>
+    <text x="30" y="200" font-family="'OCR-A', monospace" font-size="14" fill="#ffffff" opacity="0.8">Games: <tspan font-weight="bold" fill="#00d9ff">0000</tspan></text>
+    <text x="30" y="225" font-family="'OCR-A', monospace" font-size="12" fill="#ffffff" opacity="0.7">Favorites: <tspan font-weight="bold" fill="#00d9ff">00</tspan></text>
+    <line x1="20" y1="245" x2="480" y2="245" stroke="#00d9ff" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- Section 3: Play History -->
+  <g>
+    <text x="30" y="295" font-family="'OCR-A', monospace" font-size="11" fill="#00d9ff" opacity="0.7">HISTORY</text>
+    <text x="30" y="325" font-family="'OCR-A', monospace" font-size="12" fill="#ffffff" opacity="0.8">Last Played: <tspan fill="#00d9ff">--:--</tspan></text>
+    <text x="30" y="350" font-family="'OCR-A', monospace" font-size="11" fill="#ffffff" opacity="0.7">Session Time: <tspan fill="#00d9ff">0h 0m</tspan></text>
+    <line x1="20" y1="370" x2="480" y2="370" stroke="#00d9ff" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- Section 4: System Health -->
+  <g>
+    <text x="30" y="420" font-family="'OCR-A', monospace" font-size="11" fill="#00d9ff" opacity="0.7">SYSTEM STATUS</text>
+    <text x="30" y="450" font-family="'OCR-A', monospace" font-size="11" fill="#ffffff" opacity="0.8">CPU: <tspan fill="#00d9ff">--°C</tspan></text>
+    <text x="30" y="475" font-family="'OCR-A', monospace" font-size="11" fill="#ffffff" opacity="0.8">Memory: <tspan fill="#00d9ff">--GB</tspan></text>
+    <text x="30" y="500" font-family="'OCR-A', monospace" font-size="11" fill="#ffffff" opacity="0.8">Storage: <tspan fill="#00d9ff">--GB</tspan></text>
+    <line x1="20" y1="520" x2="480" y2="520" stroke="#00d9ff" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- Section 5: Controls hint -->
+  <g opacity="0.5">
+    <text x="30" y="570" font-family="'OCR-A', monospace" font-size="10" fill="#00d9ff" opacity="0.7">NAVIGATION</text>
+    <text x="30" y="595" font-family="'OCR-A', monospace" font-size="9" fill="#ffffff" opacity="0.6">D-PAD: Navigate</text>
+    <text x="30" y="615" font-family="'OCR-A', monospace" font-size="9" fill="#ffffff" opacity="0.6">A: Select System</text>
+    <text x="30" y="635" font-family="'OCR-A', monospace" font-size="9" fill="#ffffff" opacity="0.6">B: Back/Menu</text>
+  </g>
+  
+  <!-- Bottom info stripe -->
+  <g opacity="0.4">
+    <line x1="20" y1="710" x2="480" y2="710" stroke="#00d9ff" stroke-width="1"/>
+    <text x="250" y="860" font-family="'OCR-A', monospace" font-size="8" fill="#00d9ff" text-anchor="middle">CLON3D CYBERDECK TERMINAL</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 80">
+  <!-- Minimal top status strip (NOT a banner) -->
+  
+  <!-- Thin dark base -->
+  <rect width="1920" height="80" fill="#000000" opacity="0.6"/>
+  
+  <!-- Top accent line -->
+  <rect width="1920" height="2" fill="#00d9ff" opacity="0.9"/>
+  
+  <!-- Left: System identifier (minimal) -->
+  <text x="30" y="50" font-family="'OCR-A', monospace" font-size="18" fill="#00d9ff" font-weight="bold">CLON3D</text>
+  
+  <!-- Center: Status indicator -->
+  <g text-anchor="middle">
+    <!-- Status LED -->
+    <circle cx="960" cy="40" r="4" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="960" cy="40" r="2.5" fill="#00d9ff"/>
+  </g>
+  
+  <!-- Right: System mode -->
+  <text x="1890" y="50" font-family="'OCR-A', monospace" font-size="12" fill="#00d9ff" text-anchor="end">ACTIVE</text>
+  
+  <!-- Bottom accent line -->
+  <rect y="78" width="1920" height="2" fill="#00d9ff" opacity="0.6"/>
+</svg>

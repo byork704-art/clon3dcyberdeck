@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Industrial brushed metal texture background -->
+  <defs>
+    <filter id="metallic_grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <linearGradient id="metal_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1e;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0f0f13;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a0e;stop-opacity:1"/>
+    </linearGradient>
+    <pattern id="grain" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#1a1a1e"/>
+      <circle cx="1" cy="1" r="0.5" fill="#0f0f13" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Base metallic gradient -->
+  <rect width="1920" height="1080" fill="url(#metal_gradient)"/>
+  
+  <!-- Grain texture overlay -->
+  <rect width="1920" height="1080" fill="url(#grain)" opacity="0.4"/>
+  
+  <!-- Horizontal brushed lines (industrial texture) -->
+  <g stroke="#00d9ff" stroke-width="1" opacity="0.08">
+    <line x1="0" y1="50" x2="1920" y2="50"/>
+    <line x1="0" y1="100" x2="1920" y2="100"/>
+    <line x1="0" y1="150" x2="1920" y2="150"/>
+    <line x1="0" y1="200" x2="1920" y2="200"/>
+    <line x1="0" y1="250" x2="1920" y2="250"/>
+    <line x1="0" y1="300" x2="1920" y2="300"/>
+    <line x1="0" y1="350" x2="1920" y2="350"/>
+    <line x1="0" y1="400" x2="1920" y2="400"/>
+    <line x1="0" y1="450" x2="1920" y2="450"/>
+    <line x1="0" y1="500" x2="1920" y2="500"/>
+    <line x1="0" y1="550" x2="1920" y2="550"/>
+    <line x1="0" y1="600" x2="1920" y2="600"/>
+    <line x1="0" y1="650" x2="1920" y2="650"/>
+    <line x1="0" y1="700" x2="1920" y2="700"/>
+    <line x1="0" y1="750" x2="1920" y2="750"/>
+    <line x1="0" y1="800" x2="1920" y2="800"/>
+    <line x1="0" y1="850" x2="1920" y2="850"/>
+    <line x1="0" y1="900" x2="1920" y2="900"/>
+    <line x1="0" y1="950" x2="1920" y2="950"/>
+    <line x1="0" y1="1000" x2="1920" y2="1000"/>
+  </g>
+  
+  <!-- Left edge highlight (machined aluminum effect) -->
+  <rect x="0" y="0" width="3" height="1080" fill="#00d9ff" opacity="0.15"/>
+  
+  <!-- Right edge shadow -->
+  <rect x="1917" y="0" width="3" height="1080" fill="#000000" opacity="0.4"/>
+  
+  <!-- Vertical accent lines (cable trays effect) -->
+  <g stroke="#00d9ff" stroke-width="1" opacity="0.05">
+    <line x1="300" y1="0" x2="300" y2="1080"/>
+    <line x1="960" y1="0" x2="960" y2="1080"/>
+    <line x1="1620" y1="0" x2="1620" y2="1080"/>
+  </g>
+</svg>

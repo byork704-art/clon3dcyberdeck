@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Decorative accent elements (industrial hardware ports) -->
+  
+  <!-- Top-left: Port indicator -->
+  <g opacity="0.3">
+    <rect x="20" y="120" width="80" height="80" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="60" cy="160" r="8" fill="none" stroke="#00d9ff" stroke-width="1"/>
+    <text x="60" y="230" font-family="'OCR-A', monospace" font-size="8" fill="#00d9ff" text-anchor="middle">PORT A</text>
+  </g>
+  
+  <!-- Top-right: Activity indicator -->
+  <g opacity="0.3">
+    <rect x="1820" y="120" width="80" height="80" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="1860" cy="160" r="5" fill="none" stroke="#00d9ff" stroke-width="1"/>
+    <text x="1860" y="230" font-family="'OCR-A', monospace" font-size="8" fill="#00d9ff" text-anchor="middle">ACTIVE</text>
+  </g>
+  
+  <!-- Bottom-left: Power indicator -->
+  <g opacity="0.25">
+    <rect x="20" y="880" width="80" height="80" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="60" cy="920" r="12" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="60" cy="920" r="6" fill="#00d9ff" opacity="0.7"/>
+  </g>
+  
+  <!-- Bottom-right: Status indicator -->
+  <g opacity="0.25">
+    <rect x="1820" y="880" width="80" height="80" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <circle cx="1860" cy="920" r="8" fill="none" stroke="#00d9ff" stroke-width="1.5"/>
+    <text x="1860" y="975" font-family="'OCR-A', monospace" font-size="8" fill="#00d9ff" text-anchor="middle">OK</text>
+  </g>
+</svg>
