@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 100">
+  <!-- Tactical command footer -->
+  
+  <!-- Dark background -->
+  <rect width="1920" height="100" fill="#0d0d11"/>
+  <rect width="1920" height="2" fill="#00d9ff" opacity="0.6"/>
+  <rect y="98" width="1920" height="2" fill="#00d9ff" opacity="0.8"/>
+  
+  <!-- Left: Control hints -->
+  <g>
+    <!-- Label -->
+    <text x="40" y="30" font-family="'Courier New', monospace" font-size="10" fill="#00d9ff" opacity="0.7" letter-spacing="1">CONTROLS</text>
+    
+    <!-- Hints -->
+    <text x="40" y="55" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" font-weight="bold">◀ ▶</text>
+    <text x="100" y="55" font-family="'Courier New', monospace" font-size="11" fill="#ffffff" opacity="0.7">NAVIGATE</text>
+    
+    <text x="40" y="80" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" font-weight="bold">Ⓐ</text>
+    <text x="100" y="80" font-family="'Courier New', monospace" font-size="11" fill="#ffffff" opacity="0.7">SELECT</text>
+  </g>
+  
+  <!-- Center: System info -->
+  <g text-anchor="middle" opacity="0.5">
+    <text x="960" y="55" font-family="'Courier New', monospace" font-size="10" fill="#00d9ff">RETRO GAMING TERMINAL • MULTI-SYSTEM EMULATION</text>
+  </g>
+  
+  <!-- Right: Additional commands -->
+  <g text-anchor="end">
+    <!-- Label -->
+    <text x="1880" y="30" font-family="'Courier New', monospace" font-size="10" fill="#00d9ff" opacity="0.7" letter-spacing="1">SYSTEM</text>
+    
+    <!-- Hints -->
+    <text x="1880" y="55" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" font-weight="bold">☰</text>
+    <text x="1820" y="55" font-family="'Courier New', monospace" font-size="11" fill="#ffffff" opacity="0.7">MENU</text>
+    
+    <text x="1880" y="80" font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" font-weight="bold">Ⓑ</text>
+    <text x="1820" y="80" font-family="'Courier New', monospace" font-size="11" fill="#ffffff" opacity="0.7">BACK</text>
+  </g>
+</svg>

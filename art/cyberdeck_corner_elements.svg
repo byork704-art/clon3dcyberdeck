@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Decorative corner HUD elements -->
+  
+  <!-- Top-left corner element -->
+  <g opacity="0.4">
+    <rect x="10" y="10" width="150" height="150" fill="none" stroke="#00d9ff" stroke-width="2"/>
+    <text x="80" y="90" font-family="'Courier New', monospace" font-size="24" fill="#00d9ff" text-anchor="middle" font-weight="bold">◆</text>
+  </g>
+  
+  <!-- Top-right corner element -->
+  <g opacity="0.4">
+    <rect x="1760" y="10" width="150" height="150" fill="none" stroke="#00d9ff" stroke-width="2"/>
+    <text x="1835" y="90" font-family="'Courier New', monospace" font-size="24" fill="#00d9ff" text-anchor="middle" font-weight="bold">◆</text>
+  </g>
+  
+  <!-- Bottom-left corner element -->
+  <g opacity="0.4">
+    <rect x="10" y="920" width="150" height="150" fill="none" stroke="#00d9ff" stroke-width="2"/>
+    <text x="80" y="1000" font-family="'Courier New', monospace" font-size="24" fill="#00d9ff" text-anchor="middle" font-weight="bold">◆</text>
+  </g>
+  
+  <!-- Bottom-right corner element -->
+  <g opacity="0.4">
+    <rect x="1760" y="920" width="150" height="150" fill="none" stroke="#00d9ff" stroke-width="2"/>
+    <text x="1835" y="1000" font-family="'Courier New', monospace" font-size="24" fill="#00d9ff" text-anchor="middle" font-weight="bold">◆</text>
+  </g>
+</svg>

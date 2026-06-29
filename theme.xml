@@ -2,118 +2,115 @@
 	<formatVersion>4</formatVersion>
 	<include>./carbon.xml</include>
 
-	<!-- CLON3D CYBERDECK v1.0 - Industrial Military Aesthetic -->
-	<!-- Complete system view redesign - No longer based on Carbon visual style -->
+	<!-- CLON3D CYBERDECK v2.0 - TACTICAL COMMAND CENTER -->
+	<!-- Complete redesign: Military avionics aesthetic -->
+	<!-- NO Carbon visual elements remain -->
 
 	<view name="system">
 
-		<!-- Full-screen background with tech grid -->
+		<!-- Full-screen background with tech grid overlay -->
 		<image name="background" extra="true">
 			<tile>false</tile>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
-			<path>./art/cyberdeck_system_background.svg</path>
+			<path>./art/cyberdeck_hud_overlay.svg</path>
 		</image>
 
-		<!-- Industrial header bar (8% height) -->
-		<image name="header_bar" extra="true">
+		<!-- Background pattern layer -->
+		<image name="bg_pattern" extra="true">
 			<tile>false</tile>
-			<size>1 0.08</size>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/cyberdeck_background_pattern.svg</path>
+		</image>
+
+		<!-- Tactical header bar (system status and branding) -->
+		<image name="header_tactical" extra="true">
+			<tile>false</tile>
+			<size>1 0.11</size>
 			<pos>0.5 0</pos>
 			<origin>0.5 0</origin>
-			<path>./art/cyberdeck_header_bar.svg</path>
+			<path>./art/cyberdeck_tactical_header.svg</path>
 		</image>
 
-		<!-- Left panel: Large centered system logo frame -->
-		<image name="left_panel" extra="true">
+		<!-- Left side information panel -->
+		<image name="left_panel_info" extra="true">
 			<tile>false</tile>
-			<size>0.25 0.65</size>
-			<pos>0.15 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<path>./art/cyberdeck_left_panel_frame.svg</path>
-			<color>00d9ffff</color>
+			<size>0.15 0.75</size>
+			<pos>0.02 0.5</pos>
+			<origin>0 0.5</origin>
+			<path>./art/cyberdeck_side_panel_left.svg</path>
 		</image>
 
-		<!-- Center: System logo (large, prominent) -->
-		<image name="logo">
-			<path>./art/logo/${system.theme}.svg</path>
-			<pos>0.15 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<maxSize>0.20 0.60</maxSize>
-			<color>00d9ffff</color>
-		</image>
-
-		<!-- Center display panel -->
-		<image name="center_display" extra="true">
+		<!-- Center: Large dominant system logo -->
+		<image name="logo_frame" extra="true">
 			<tile>false</tile>
-			<size>0.28 0.65</size>
+			<size>0.35 0.75</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
-			<path>./art/cyberdeck_center_display.svg</path>
+			<path>./art/cyberdeck_logo_frame.svg</path>
 		</image>
 
-		<!-- System name text overlay -->
+		<!-- System logo (dominant focal point - 60% of display) -->
+		<image name="logo">
+			<path>./art/logo/${system.theme}.svg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.32 0.70</maxSize>
+			<color>00d9ffff</color>
+		</image>
+
+		<!-- Right side quick access panel -->
+		<image name="right_panel_info" extra="true">
+			<tile>false</tile>
+			<size>0.15 0.75</size>
+			<pos>0.98 0.5</pos>
+			<origin>1 0.5</origin>
+			<path>./art/cyberdeck_side_panel_right.svg</path>
+		</image>
+
+		<!-- System name overlay text (minimal) -->
 		<text name="system_name" extra="true">
-			<pos>0.5 0.35</pos>
+			<pos>0.5 0.25</pos>
 			<origin>0.5 0</origin>
-			<size>0.35 0.08</size>
+			<size>0.35 0.06</size>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.055</fontSize>
+			<fontSize>0.048</fontSize>
 			<color>00d9ffff</color>
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
 		</text>
 
-		<!-- Game count display -->
-		<text name="game_count" extra="true">
-			<pos>0.5 0.50</pos>
-			<origin>0.5 0</origin>
-			<size>0.20 0.05</size>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.035</fontSize>
-			<color>00d9ffff</color>
-			<alignment>center</alignment>
-		</text>
-
-		<!-- Right panel: HUD overlay -->
-		<image name="right_hud" extra="true">
-			<tile>false</tile>
-			<size>0.25 0.65</size>
-			<pos>0.85 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<path>./art/cyberdeck_right_hud_panel.svg</path>
-			<color>00d9ffff</color>
-		</image>
-
 		<!-- Corner bracket decorations -->
-		<image name="corner_brackets" extra="true">
+		<image name="corner_hud" extra="true">
 			<tile>false</tile>
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
-			<path>./art/cyberdeck_corner_brackets.svg</path>
+			<path>./art/cyberdeck_corner_elements.svg</path>
 		</image>
 
-		<!-- Tactical footer bar (5% height) -->
-		<image name="footer_bar" extra="true">
+		<!-- Tactical footer bar (commands and system info) -->
+		<image name="footer_tactical" extra="true">
 			<tile>false</tile>
-			<size>1 0.05</size>
+			<size>1 0.095</size>
 			<pos>0.5 1</pos>
 			<origin>0.5 1</origin>
-			<path>./art/cyberdeck_footer_bar.svg</path>
+			<path>./art/cyberdeck_tactical_footer.svg</path>
 		</image>
 
-		<!-- Help system (tactical cyan) -->
+		<!-- Help system (minimal, tactical) -->
 		<helpsystem name="help">
 			<textColor>00d9ffff</textColor>
 			<iconColor>00d9ffff</iconColor>
 			<pos>0.02 0.92</pos>
+			<fontSize>0.025</fontSize>
 		</helpsystem>
 
 	</view>
 
-	<!-- Game list views inherited from carbon.xml -->
-	<!-- No changes to basic, detailed, video views -->
+	<!-- Game list views inherited from carbon.xml (minimal changes to basic/detailed/video) -->
 
 </theme>

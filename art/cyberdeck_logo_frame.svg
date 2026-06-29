@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
+  <!-- Premium frame for system logo/artwork -->
+  
+  <!-- Outer frame -->
+  <rect x="20" y="20" width="560" height="660" fill="none" stroke="#00d9ff" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Inner frame line -->
+  <rect x="35" y="35" width="530" height="630" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Corner brackets (top-left) -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M 25 25 L 25 85 M 25 25 L 85 25"/>
+    <circle cx="25" cy="25" r="4" fill="#00d9ff" opacity="0.6"/>
+  </g>
+  
+  <!-- Corner brackets (top-right) -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M 575 25 L 575 85 M 575 25 L 515 25"/>
+    <circle cx="575" cy="25" r="4" fill="#00d9ff" opacity="0.6"/>
+  </g>
+  
+  <!-- Corner brackets (bottom-left) -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M 25 675 L 25 615 M 25 675 L 85 675"/>
+    <circle cx="25" cy="675" r="4" fill="#00d9ff" opacity="0.6"/>
+  </g>
+  
+  <!-- Corner brackets (bottom-right) -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M 575 675 L 575 615 M 575 675 L 515 675"/>
+    <circle cx="575" cy="675" r="4" fill="#00d9ff" opacity="0.6"/>
+  </g>
+  
+  <!-- Center targeting reticle -->
+  <g stroke="#00d9ff" stroke-width="1.5" opacity="0.3">
+    <circle cx="300" cy="350" r="40" fill="none"/>
+    <circle cx="300" cy="350" r="25" fill="none"/>
+    <circle cx="300" cy="350" r="10" fill="none"/>
+    <line x1="300" y1="330" x2="300" y2="370"/>
+    <line x1="280" y1="350" x2="320" y2="350"/>
+  </g>
+</svg>

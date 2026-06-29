@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Full-screen tactical HUD overlay with grid and scan effects -->
+  
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="tactical_grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" stroke="#00d9ff" stroke-width="0.8" opacity="0.05"/>
+      <circle cx="30" cy="30" r="1" fill="#00d9ff" opacity="0.08"/>
+    </pattern>
+    
+    <!-- Vignette gradient -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#1a1a1e;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.6"/>
+    </radialGradient>
+    
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" width="1920" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="1920" y2="0" stroke="#00d9ff" stroke-width="0.5" opacity="0.03"/>
+      <line x1="0" y1="2" x2="1920" y2="2" stroke="#00d9ff" stroke-width="0.5" opacity="0.02"/>
+    </pattern>
+  </defs>
+  
+  <!-- Dark base -->
+  <rect width="1920" height="1080" fill="#0a0a0e"/>
+  
+  <!-- Grid overlay -->
+  <rect width="1920" height="1080" fill="url(#tactical_grid)"/>
+  
+  <!-- Scanline effect -->
+  <rect width="1920" height="1080" fill="url(#scanlines)"/>
+  
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  
+  <!-- Top bright line -->
+  <line x1="0" y1="0" x2="1920" y2="0" stroke="#00d9ff" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Bottom bright line -->
+  <line x1="0" y1="1078" x2="1920" y2="1078" stroke="#00d9ff" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Left bright line -->
+  <line x1="0" y1="0" x2="0" y2="1080" stroke="#00d9ff" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Right bright line -->
+  <line x1="1918" y1="0" x2="1918" y2="1080" stroke="#00d9ff" stroke-width="2" opacity="0.2"/>
+</svg>
