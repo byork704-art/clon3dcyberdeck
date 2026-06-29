@@ -1,0 +1,80 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<!-- CLON3D CYBERDECK OS - DETAILED VIEW -->
+	<!-- Game information and metadata display -->
+	<!-- Custom independent module -->
+
+	<view name="detailed">
+
+		<!-- Background -->
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/clon3d_dashboard_background.svg</path>
+		</image>
+
+		<!-- Header -->
+		<image name="header_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.10</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/detailed_header.svg</path>
+		</image>
+
+		<!-- Left side: Game list -->
+		<textlist name="gamelist">
+			<selectorColor>00d9ff</selectorColor>
+			<selectedColor>00d9ffff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.02 0.15</pos>
+			<size>0.40 0.70</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.028</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+
+		<!-- Right side: Game metadata -->
+		<text name="md_description">
+			<color>e0e0e0</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.020</fontSize>
+			<size>0.45 0.40</size>
+			<pos>0.53 0.20</pos>
+		</text>
+
+		<!-- Game image -->
+		<image name="md_image">
+			<pos>0.75 0.55</pos>
+			<maxSize>0.40 0.35</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<!-- Bottom footer -->
+		<image name="footer_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.10</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./art/detailed_footer.svg</path>
+		</image>
+
+		<!-- Help system -->
+		<helpsystem name="help">
+			<textColor>00d9ffff</textColor>
+			<iconColor>00d9ffff</iconColor>
+			<pos>0.02 0.88</pos>
+			<fontSize>0.020</fontSize>
+		</helpsystem>
+
+	</view>
+
+</theme>
