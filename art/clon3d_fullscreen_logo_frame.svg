@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <!-- Large centered system logo frame (MAIN FOCAL POINT) -->
+  <!-- This frame dominates the screen -->
+  
+  <!-- Outer industrial frame border -->
+  <rect x="30" y="30" width="1140" height="840" fill="none" stroke="#00d9ff" stroke-width="4" opacity="0.9"/>
+  
+  <!-- Inner precision frame -->
+  <rect x="60" y="60" width="1080" height="780" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Corner accent elements (industrial look) -->
+  <g stroke="#00d9ff" stroke-width="3" opacity="0.8" fill="none">
+    <!-- Top-left corner -->
+    <path d="M 30 30 L 30 120 M 30 30 L 120 30"/>
+    <circle cx="30" cy="30" r="8" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Top-right corner -->
+    <path d="M 1170 30 L 1170 120 M 1170 30 L 1080 30"/>
+    <circle cx="1170" cy="30" r="8" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Bottom-left corner -->
+    <path d="M 30 870 L 30 780 M 30 870 L 120 870"/>
+    <circle cx="30" cy="870" r="8" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Bottom-right corner -->
+    <path d="M 1170 870 L 1170 780 M 1170 870 L 1080 870"/>
+    <circle cx="1170" cy="870" r="8" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Center alignment guides (subtle crosshair) -->
+  <g stroke="#00d9ff" stroke-width="1" opacity="0.2">
+    <line x1="600" y1="380" x2="600" y2="420"/>
+    <line x1="580" y1="400" x2="620" y2="400"/>
+    <circle cx="600" cy="400" r="15" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.15"/>
+  </g>
+</svg>
