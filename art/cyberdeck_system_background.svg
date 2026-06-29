@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Main dark gunmetal background -->
+  <rect width="1920" height="1080" fill="#1a1a1e"/>
+  
+  <!-- Tech grid pattern overlay -->
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="none" stroke="#00d9ff" stroke-width="0.5" opacity="0.08"/>
+      <circle cx="40" cy="40" r="1.5" fill="#00d9ff" opacity="0.12"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" style="stop-color:#1a1a1e;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.4"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Grid fill -->
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Subtle horizontal scan lines -->
+  <line x1="0" y1="0" x2="1920" y2="0" stroke="#00d9ff" stroke-width="0.3" opacity="0.03"/>
+  <line x1="0" y1="2" x2="1920" y2="2" stroke="#00d9ff" stroke-width="0.3" opacity="0.03"/>
+  <line x1="0" y1="4" x2="1920" y2="4" stroke="#00d9ff" stroke-width="0.3" opacity="0.03"/>
+  
+  <!-- Vignette fade -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  
+  <!-- Subtle accent lines -->
+  <line x1="0" y1="0" x2="1920" y2="0" stroke="#00d9ff" stroke-width="2" opacity="0.2"/>
+  <line x1="0" y1="1080" x2="1920" y2="1080" stroke="#00d9ff" stroke-width="2" opacity="0.2"/>
+</svg>

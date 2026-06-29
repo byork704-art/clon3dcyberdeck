@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Premium corner brackets for visual framing -->
+  
+  <!-- Top-left corner -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M 20 20 L 20 80 M 20 20 L 80 20"/>
+    <circle cx="20" cy="20" r="6" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Top-right corner -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M 1900 20 L 1900 80 M 1900 20 L 1840 20"/>
+    <circle cx="1900" cy="20" r="6" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Bottom-left corner -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M 20 1060 L 20 1000 M 20 1060 L 80 1060"/>
+    <circle cx="20" cy="1060" r="6" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Bottom-right corner -->
+  <g stroke="#00d9ff" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M 1900 1060 L 1900 1000 M 1900 1060 L 1840 1060"/>
+    <circle cx="1900" cy="1060" r="6" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Subtle edge lines -->
+  <g stroke="#00d9ff" stroke-width="1" opacity="0.3">
+    <line x1="10" y1="0" x2="10" y2="1080"/>
+    <line x1="1910" y1="0" x2="1910" y2="1080"/>
+    <line x1="0" y1="10" x2="1920" y2="10"/>
+    <line x1="0" y1="1070" x2="1920" y2="1070"/>
+  </g>
+</svg>

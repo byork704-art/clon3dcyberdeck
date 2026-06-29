@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Center stats/info panel -->
+  
+  <!-- Background panel -->
+  <rect x="10" y="10" width="480" height="380" fill="#000000" opacity="0.3" stroke="#00d9ff" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Top info bar -->
+  <rect x="20" y="20" width="460" height="40" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+  
+  <!-- System name area -->
+  <text x="250" y="105" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00d9ff" text-anchor="middle">SYSTEM NAME</text>
+  
+  <!-- Stats area background -->
+  <rect x="30" y="135" width="440" height="120" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Game count stat -->
+  <text x="50" y="170" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">TOTAL GAMES:</text>
+  <text x="50" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00d9ff">0000</text>
+  
+  <!-- Favorites stat -->
+  <text x="250" y="170" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" opacity="0.7">FAVORITES:</text>
+  <text x="250" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00d9ff">00</text>
+  
+  <!-- Last played info -->
+  <text x="50" y="245" font-family="Arial, sans-serif" font-size="11" fill="#00d9ff" opacity="0.6">LAST PLAYED: --:-- --</text>
+  
+  <!-- Bottom divider -->
+  <line x1="20" y1="280" x2="480" y2="280" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Footer text -->
+  <text x="250" y="360" font-family="Arial, sans-serif" font-size="10" fill="#00d9ff" opacity="0.5" text-anchor="middle">SELECT SYSTEM TO CONTINUE</text>
+</svg>
