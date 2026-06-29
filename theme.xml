@@ -1,52 +1,202 @@
 <theme>
 	<formatVersion>4</formatVersion>
-    <include>./carbon.xml</include>
 
 	<view name="system">
-		<!-- Large Centered System Logo -->
+		<!-- Full-Screen Dark Background -->
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/clon3d_background.svg</path>
+		</image>
+
+		<!-- Top Status Bar -->
+		<image name="statusbar_top" extra="true">
+			<tile>false</tile>
+			<size>1 0.14</size>
+			<pos>0.5 0</pos>
+			<origin>0.5 0</origin>
+			<path>./art/status_bar_top.svg</path>
+		</image>
+
+		<!-- Center Glowing Logo -->
 		<image name="logo">
 			<path>./art/logo/${system.theme}.svg</path>
-			<pos>0.5 0.5</pos>
+			<pos>0.5 0.45</pos>
 			<origin>0.5 0.5</origin>
-			<maxSize>0.5 0.5</maxSize>
+			<maxSize>0.6 0.5</maxSize>
 			<color>00d9ff</color>
 		</image>
 
-		<!-- System Name Text Below Logo -->
-		<text name="logoText">
+		<!-- System Name - Minimal Text -->
+		<text name="systemInfo" extra="true">
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.045</fontSize>
 			<color>00d9ff</color>
-			<forceUppercase>true</forceUppercase>
-			<fontSize>0.08</fontSize>
-			<pos>0.5 0.72</pos>
-			<origin>0.5 0</origin>
 			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<pos>0.5 0.75</pos>
+			<origin>0.5 0</origin>
 		</text>
+
+		<!-- Bottom Control Bar -->
+		<image name="controlbar_bottom" extra="true">
+			<tile>false</tile>
+			<size>1 0.18</size>
+			<pos>0.5 1</pos>
+			<origin>0.5 1</origin>
+			<path>./art/control_bar_bottom.svg</path>
+		</image>
+
+		<!-- Help System (Bottom Left) -->
+		<helpsystem name="help">
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<textColor>00d9ff</textColor>
+			<iconColor>00d9ff</iconColor>
+			<pos>0.02 0.92</pos>
+		</helpsystem>
 	</view>
 
-	<view name="basic, detailed, video">
-		<text name="logoText">
-			<pos>0.01 0.02</pos>
-			<size>0.460 0.126</size>
-			<fontSize>0.12</fontSize>
+	<!-- Game List View - Preserved from Carbon -->
+	<view name="basic">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>00d9ff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<color>00d9ff</color>
-			<forceUppercase>true</forceUppercase>
-		</text>
-		<image name="logo">
-			<path>./art/logo/${system.theme}.svg</path>
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			<origin>0.5 0.5</origin>
+			<fontSize>0.030</fontSize>
+			<pos>0.025 0.18</pos>
+			<size>0.950 0.73</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.16</size>
+			<path>./art/top.png</path>
 			<color>00d9ff</color>
 		</image>
 
-		<image name="logo2" extra="true">
-			<path>./art/controller/${system.theme}.svg</path>
-			<pos>0.874 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>
+			<color>00d9ff</color>
+		</image>
+	</view>
+
+	<!-- Detailed View -->
+	<view name="detailed">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>00d9ff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.021 0.168</pos>
+			<size>0.489 0.754</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.03</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+
+		<image name="md_image">
+			<pos>0.763 0.400</pos>
+			<maxSize>0.453 0.436</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>808080</color>
+		</image>
+
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.16</size>
+			<path>./art/top.png</path>
+			<color>00d9ff</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>
+			<color>00d9ff</color>
+		</image>
+	</view>
+
+	<!-- Video View -->
+	<view name="video">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>00d9ff</selectedColor>
+			<primaryColor>e0e0e0</primaryColor>
+			<secondaryColor>808080</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.021 0.168</pos>
+			<size>0.489 0.754</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.03</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+
+		<video name="md_video">
+			<pos>0.763 0.400</pos>
+			<maxSize>0.366 0.436</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.2</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.16</size>
+			<path>./art/top.png</path>
+			<color>00d9ff</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>
+			<color>00d9ff</color>
 		</image>
 	</view>
 </theme>
