@@ -1,13 +1,13 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-	<!-- CLON3D CYBERDECK OS - SYSTEM DASHBOARD VIEW -->
-	<!-- Complete replacement for Carbon system view -->
-	<!-- Fullscreen industrial dashboard interface -->
+	<!-- CLON3D CYBERDECK OS - SYSTEM DASHBOARD VIEW v4.0 -->
+	<!-- Asymmetric 3-column industrial dashboard layout -->
+	<!-- Left Nav (14%) | Center Logo (60%) | Right Data (21.5%) -->
 
 	<view name="system">
 
-		<!-- FULL-SCREEN BACKGROUND: Industrial gunmetal dashboard -->
+		<!-- FULL-SCREEN BACKGROUND: Radial gradient with diagonal grid -->
 		<image name="background" extra="true">
 			<tile>false</tile>
 			<size>1 1</size>
@@ -16,59 +16,65 @@
 			<path>./art/clon3d_dashboard_background.svg</path>
 		</image>
 
-		<!-- TOP STATUS BAR: System identification and status -->
-		<image name="header_bar" extra="true">
+		<!-- TOP STATUS BAR (8% height): CLON3D OS branding + status -->
+		<image name="system_header" extra="true">
 			<tile>false</tile>
-			<size>1 0.11</size>
-			<pos>0.5 0</pos>
-			<origin>0.5 0</origin>
-			<path>./art/clon3d_fullscreen_header.svg</path>
+			<size>1 0.08</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/clon3d_system_header.svg</path>
 		</image>
 
-		<!-- CENTER LOGO FRAME: Industrial framing (main focal point) -->
+		<!-- LEFT NAVIGATION COLUMN (14% width): Nav index diamonds -->
+		<image name="left_nav_panel" extra="true">
+			<tile>false</tile>
+			<size>0.14 0.84</size>
+			<pos>0 0.08</pos>
+			<origin>0 0</origin>
+			<path>./art/clon3d_left_nav_panel.svg</path>
+		</image>
+
+		<!-- LOGO FRAME: Asymmetric industrial frame - NOT centered, offset left -->
 		<image name="logo_frame" extra="true">
 			<tile>false</tile>
-			<size>0.625 0.83</size>
-			<pos>0.5 0.54</pos>
-			<origin>0.5 0.5</origin>
+			<size>0.60 0.80</size>
+			<pos>0.17 0.10</pos>
+			<origin>0 0</origin>
 			<path>./art/clon3d_fullscreen_logo_frame.svg</path>
 		</image>
 
-		<!-- SYSTEM LOGO: Large centered (THE focal point of the interface) -->
+		<!-- SYSTEM LOGO: Featured inside asymmetric frame -->
 		<image name="logo">
-			<path>./art/logo/${system.theme}.svg</path>
-			<pos>0.5 0.54</pos>
+			<path>./${system.theme}/art/system.svg</path>
+			<pos>0.47 0.50</pos>
 			<origin>0.5 0.5</origin>
-			<maxSize>0.55 0.75</maxSize>
+			<maxSize>0.52 0.68</maxSize>
 			<color>00d9ffff</color>
 		</image>
 
-		<!-- SYSTEM NAME: Minimal text overlay -->
-		<text name="system_name" extra="true">
-			<pos>0.5 0.15</pos>
-			<origin>0.5 0</origin>
-			<size>0.4 0.08</size>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.040</fontSize>
-			<color>00d9ffff</color>
-			<alignment>center</alignment>
-			<forceUppercase>true</forceUppercase>
-		</text>
-
-		<!-- BOTTOM FOOTER: Controls and information -->
-		<image name="footer_bar" extra="true">
+		<!-- RIGHT OPERATIONAL DATA PANEL (21.5% width): System stats feed -->
+		<image name="right_data_panel" extra="true">
 			<tile>false</tile>
-			<size>1 0.12</size>
-			<pos>0.5 1</pos>
-			<origin>0.5 1</origin>
-			<path>./art/clon3d_fullscreen_footer.svg</path>
+			<size>0.215 0.84</size>
+			<pos>0.785 0.08</pos>
+			<origin>0 0</origin>
+			<path>./art/clon3d_right_data_panel.svg</path>
 		</image>
 
-		<!-- HELP SYSTEM: Minimal tactical display -->
+		<!-- BOTTOM COMMAND BAR (9.5% height): Controls and hints -->
+		<image name="system_footer" extra="true">
+			<tile>false</tile>
+			<size>1 0.095</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./art/clon3d_system_footer.svg</path>
+		</image>
+
+		<!-- HELP SYSTEM: Tactical minimal display -->
 		<helpsystem name="help">
 			<textColor>00d9ffff</textColor>
 			<iconColor>00d9ffff</iconColor>
-			<pos>0.02 0.88</pos>
+			<pos>0.02 0.91</pos>
 			<fontSize>0.020</fontSize>
 		</helpsystem>
 

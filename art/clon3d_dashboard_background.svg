@@ -1,52 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-  <!-- Full-screen dashboard background: Dark gunmetal with industrial texture -->
   <defs>
-    <linearGradient id="gunmetal_grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a1e;stop-opacity:1"/>
-      <stop offset="50%" style="stop-color:#0f0f13;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0a0a0e;stop-opacity:1"/>
-    </linearGradient>
-    <pattern id="industrial_texture" width="100" height="100" patternUnits="userSpaceOnUse">
-      <rect width="100" height="100" fill="#1a1a1e"/>
-      <line x1="0" y1="0" x2="100" y2="100" stroke="#00d9ff" stroke-width="0.5" opacity="0.03"/>
-      <line x1="100" y1="0" x2="0" y2="100" stroke="#00d9ff" stroke-width="0.5" opacity="0.03"/>
+    <!-- Radial gradient: lighter center, darker edges -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1a1a1e" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0a0a0e" stop-opacity="1"/>
+    </radialGradient>
+    <!-- Diagonal grid pattern at 45deg, 120px spacing -->
+    <pattern id="diagGrid" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="120" y2="120" stroke="#00d9ff" stroke-width="0.8" opacity="0.03"/>
+      <line x1="120" y1="0" x2="0" y2="120" stroke="#00d9ff" stroke-width="0.8" opacity="0.03"/>
+      <line x1="-60" y1="60" x2="60" y2="-60" stroke="#00d9ff" stroke-width="0.8" opacity="0.03"/>
+      <line x1="60" y1="180" x2="180" y2="60" stroke="#00d9ff" stroke-width="0.8" opacity="0.03"/>
     </pattern>
-  </defs>
-  
-  <!-- Main background -->
-  <rect width="1920" height="1080" fill="url(#gunmetal_grad)"/>
-  <rect width="1920" height="1080" fill="url(#industrial_texture)" opacity="0.15"/>
-  
-  <!-- Subtle horizontal lines (brushed metal effect) -->
-  <g stroke="#00d9ff" stroke-width="0.5" opacity="0.05">
-    <line x1="0" y1="50" x2="1920" y2="50"/>
-    <line x1="0" y1="100" x2="1920" y2="100"/>
-    <line x1="0" y1="150" x2="1920" y2="150"/>
-    <line x1="0" y1="200" x2="1920" y2="200"/>
-    <line x1="0" y1="250" x2="1920" y2="250"/>
-    <line x1="0" y1="300" x2="1920" y2="300"/>
-    <line x1="0" y1="350" x2="1920" y2="350"/>
-    <line x1="0" y1="400" x2="1920" y2="400"/>
-    <line x1="0" y1="450" x2="1920" y2="450"/>
-    <line x1="0" y1="500" x2="1920" y2="500"/>
-    <line x1="0" y1="550" x2="1920" y2="550"/>
-    <line x1="0" y1="600" x2="1920" y2="600"/>
-    <line x1="0" y1="650" x2="1920" y2="650"/>
-    <line x1="0" y1="700" x2="1920" y2="700"/>
-    <line x1="0" y1="750" x2="1920" y2="750"/>
-    <line x1="0" y1="800" x2="1920" y2="800"/>
-    <line x1="0" y1="850" x2="1920" y2="850"/>
-    <line x1="0" y1="900" x2="1920" y2="900"/>
-    <line x1="0" y1="950" x2="1920" y2="950"/>
-    <line x1="0" y1="1000" x2="1920" y2="1000"/>
-  </g>
-  
-  <!-- Vignette fade edges -->
-  <defs>
-    <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
-      <stop offset="0%" style="stop-color:#1a1a1e;stop-opacity:0"/>
-      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.5"/>
+    <!-- Vignette overlay -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
     </radialGradient>
   </defs>
+
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- Diagonal grid overlay -->
+  <rect width="1920" height="1080" fill="url(#diagGrid)"/>
+
+  <!-- Vertical accent line: left column edge at x=268 -->
+  <line x1="268" y1="0" x2="268" y2="1080" stroke="#00d9ff" stroke-width="2" opacity="0.15"/>
+
+  <!-- Vertical accent line: right column edge at x=1507 -->
+  <line x1="1507" y1="0" x2="1507" y2="1080" stroke="#00d9ff" stroke-width="2" opacity="0.15"/>
+
+  <!-- Vignette overlay -->
   <rect width="1920" height="1080" fill="url(#vignette)"/>
 </svg>

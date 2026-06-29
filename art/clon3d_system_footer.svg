@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 103">
+  <!-- CLON3D CYBERDECK OS - System Footer / Command Bar -->
+  <!-- Background -->
+  <rect width="1920" height="103" fill="#000000" opacity="0.60"/>
+  <!-- Top border -->
+  <line x1="0" y1="1.5" x2="1920" y2="1.5" stroke="#00d9ff" stroke-width="3" opacity="0.7"/>
+  <!-- Bottom border -->
+  <line x1="0" y1="101.5" x2="1920" y2="101.5" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Zone separators: 20% / 60% / 20% -->
+  <line x1="384" y1="8" x2="384" y2="95" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+  <line x1="1536" y1="8" x2="1536" y2="95" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+
+  <!-- LEFT ZONE (0 to 384): Navigation hints -->
+  <text x="24" y="46" font-family="monospace" font-size="12" fill="#00d9ff" opacity="0.9">&#x2191;&#x2193; SELECT SYSTEM</text>
+  <text x="24" y="70" font-family="monospace" font-size="12" fill="#00d9ff" opacity="0.7">&#x25CF;  &#x2190;&#x2192; CYCLE</text>
+
+  <!-- CENTER ZONE (384 to 1536): System designation -->
+  <text x="960" y="42" font-family="monospace" font-size="14" fill="#00d9ff" opacity="0.6" text-anchor="middle">CLON3D CYBERDECK OS</text>
+  <text x="960" y="70" font-family="monospace" font-size="10" fill="#00d9ff" opacity="0.4" text-anchor="middle">SYSTEM SELECTOR &#x2014; RETRO EMULATION TERMINAL</text>
+
+  <!-- RIGHT ZONE (1536 to 1920): Action controls -->
+  <text x="1896" y="46" font-family="monospace" font-size="12" fill="#00d9ff" opacity="0.9" text-anchor="end">A  LAUNCH</text>
+  <text x="1896" y="70" font-family="monospace" font-size="12" fill="#00d9ff" opacity="0.7" text-anchor="end">B  BACK</text>
+</svg>
